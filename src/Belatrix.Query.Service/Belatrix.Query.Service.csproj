@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Belatrix.Models.DTOs\Belatrix.Models.DTOs.csproj" />
+    <ProjectReference Include="..\Belatrix.Persistence\Belatrix.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

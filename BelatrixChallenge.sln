@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Clients", "01. Clients", "{3E3E3B86-0105-4FE9-A864-A543A2A01C39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Api", "02. Api", "{300C0F23-FC2B-46A2-9841-C915A393D13E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Belatrix.Api", "src\Belatrix.Api\Belatrix.Api.csproj", "{C8BC641A-1FE2-4F29-99D8-CDC292ECADB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Service", "03. Service", "{B5AAA727-CBB3-40FA-B767-099C65A44A8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. Persistence", "04. Persistence", "{78AF3A1E-7B82-46B8-A669-78DB00C084E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Models", "05. Models", "{07C79825-ED46-44AD-851B-D9F07637AEA9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Belatrix.Models.Domain", "src\Belatrix.Models.Domain\Belatrix.Models.Domain.csproj", "{F14BDD5E-0127-4AA9-8E97-86958A5BE49E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Belatrix.Persistence", "src\Belatrix.Persistence\Belatrix.Persistence.csproj", "{D7102C85-BE30-4EF5-BC40-981C131A5D76}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Belatrix.Query.Service", "src\Belatrix.Query.Service\Belatrix.Query.Service.csproj", "{0B1EC766-691F-4BB4-B9CC-58EAEE846C73}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Belatrix.Task.Service", "src\Belatrix.Task.Service\Belatrix.Task.Service.csproj", "{F90D6B00-48C2-4B79-99DE-039FFD66FBF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06. Tests", "06. Tests", "{08E9272D-C384-45CF-BA7A-ED84C29F611B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Belatrix.Client", "src\Belatrix.Client\Belatrix.Client.csproj", "{E6E0D6EB-B2ED-4095-B2D1-B3E69480DAFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belatrix.Models.DTOs", "src\Belatrix.Models.DTOs\Belatrix.Models.DTOs.csproj", "{E9DAAFE5-8134-43CD-9868-08B0F8B2CA7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8BC641A-1FE2-4F29-99D8-CDC292ECADB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8BC641A-1FE2-4F29-99D8-CDC292ECADB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8BC641A-1FE2-4F29-99D8-CDC292ECADB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8BC641A-1FE2-4F29-99D8-CDC292ECADB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F14BDD5E-0127-4AA9-8E97-86958A5BE49E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F14BDD5E-0127-4AA9-8E97-86958A5BE49E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F14BDD5E-0127-4AA9-8E97-86958A5BE49E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F14BDD5E-0127-4AA9-8E97-86958A5BE49E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7102C85-BE30-4EF5-BC40-981C131A5D76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7102C85-BE30-4EF5-BC40-981C131A5D76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7102C85-BE30-4EF5-BC40-981C131A5D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7102C85-BE30-4EF5-BC40-981C131A5D76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B1EC766-691F-4BB4-B9CC-58EAEE846C73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B1EC766-691F-4BB4-B9CC-58EAEE846C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B1EC766-691F-4BB4-B9CC-58EAEE846C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B1EC766-691F-4BB4-B9CC-58EAEE846C73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F90D6B00-48C2-4B79-99DE-039FFD66FBF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F90D6B00-48C2-4B79-99DE-039FFD66FBF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F90D6B00-48C2-4B79-99DE-039FFD66FBF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F90D6B00-48C2-4B79-99DE-039FFD66FBF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6E0D6EB-B2ED-4095-B2D1-B3E69480DAFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6E0D6EB-B2ED-4095-B2D1-B3E69480DAFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6E0D6EB-B2ED-4095-B2D1-B3E69480DAFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6E0D6EB-B2ED-4095-B2D1-B3E69480DAFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9DAAFE5-8134-43CD-9868-08B0F8B2CA7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9DAAFE5-8134-43CD-9868-08B0F8B2CA7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9DAAFE5-8134-43CD-9868-08B0F8B2CA7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9DAAFE5-8134-43CD-9868-08B0F8B2CA7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C8BC641A-1FE2-4F29-99D8-CDC292ECADB5} = {300C0F23-FC2B-46A2-9841-C915A393D13E}
+		{F14BDD5E-0127-4AA9-8E97-86958A5BE49E} = {07C79825-ED46-44AD-851B-D9F07637AEA9}
+		{D7102C85-BE30-4EF5-BC40-981C131A5D76} = {78AF3A1E-7B82-46B8-A669-78DB00C084E9}
+		{0B1EC766-691F-4BB4-B9CC-58EAEE846C73} = {B5AAA727-CBB3-40FA-B767-099C65A44A8C}
+		{F90D6B00-48C2-4B79-99DE-039FFD66FBF4} = {B5AAA727-CBB3-40FA-B767-099C65A44A8C}
+		{E6E0D6EB-B2ED-4095-B2D1-B3E69480DAFE} = {3E3E3B86-0105-4FE9-A864-A543A2A01C39}
+		{E9DAAFE5-8134-43CD-9868-08B0F8B2CA7B} = {07C79825-ED46-44AD-851B-D9F07637AEA9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FA31BDA-125A-4F7E-B86B-816D4ED9F331}
+	EndGlobalSection
+EndGlobal

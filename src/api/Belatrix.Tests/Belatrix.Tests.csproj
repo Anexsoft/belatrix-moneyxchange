@@ -16,8 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Belatrix.Api\Belatrix.Api.csproj" />
     <ProjectReference Include="..\Belatrix.Persistence\Belatrix.Persistence.csproj" />
-    <ProjectReference Include="..\Belatrix.Query.Service\Belatrix.Query.Service.csproj" />
   </ItemGroup>
 
 </Project>

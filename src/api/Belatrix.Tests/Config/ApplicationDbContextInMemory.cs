@@ -12,33 +12,7 @@ namespace Belatrix.Tests
                 .UseInMemoryDatabase(databaseName: $"BelatrixChallenge.Db")
                 .Options;
 
-            var context = new ApplicationDbContext(options);
-
-            Seed(context);
-
-            return context;
-        }
-
-        private static void Seed(ApplicationDbContext context) 
-        {
-            // Basic data for tests
-            context.Currencies.Add(new Currency
-            {
-                CurrencyId = 1,
-                Code = "USD",
-                Name = "Dólares americanos",
-                Value = 1
-            });
-
-            context.Currencies.Add(new Currency
-            {
-                CurrencyId = 2,
-                Code = "EUR",
-                Name = "Euros",
-                Value = 0.92m
-            });
-
-            context.SaveChanges();
+            return new ApplicationDbContext(options);
         }
     }
 }

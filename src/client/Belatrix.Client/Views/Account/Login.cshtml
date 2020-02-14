@@ -1,0 +1,28 @@
+﻿@model Belatrix.Client.ViewModels.LoginViewModel
+@{
+    ViewData["Title"] = "Registro";
+}
+
+
+<section class="section">
+    <div class="container">
+        @if(Model.HasError)
+        {
+            <div class="notification is-danger has-text-centered">No se pudo autenticar con el sistema</div>
+        }
+
+        <form method="post" asp-action="Login">
+            <div class="field">
+                <input asp-for="Email" type="email" required class="input" placeholder="E-mail" />
+            </div>
+
+            <div class="field">
+                <input asp-for="Password" type="password" required class="input" placeholder="Password" />
+            </div>
+
+            <div class="field">
+                <button type="submit" class="button is-primary is-medium">Ingresar</button>
+            </div>
+        </form>
+    </div>
+</section>

@@ -6,6 +6,7 @@ using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
@@ -21,17 +22,20 @@ namespace Belatrix.Task.Service
         IRequestHandler<UserLoginCommand, IdentityAccess>
     {
         private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly ILogger<UserLoginEventHandler> _logger;
         private readonly ApplicationDbContext _context;
         private readonly IConfiguration _configuration;
 
         public UserLoginEventHandler(
             SignInManager<ApplicationUser> signInManager,
+            ILogger<UserLoginEventHandler> logger,
             ApplicationDbContext context,
             IConfiguration configuration)
         {
             _signInManager = signInManager;
-            _context = context;
             _configuration = configuration;
+            _context = context;
+            _logger = logger;
         }
 
         public async Task<IdentityAccess> Handle(UserLoginCommand notification, CancellationToken cancellationToken)
@@ -43,8 +47,14 @@ namespace Belatrix.Task.Service
 
             if (response.Succeeded)
             {
+                _logger.LogInformation($"Successful authentication by {user.Email}");
+
                 result.Succeeded = true;
                 GenerateToken(user, result);
+            }
+            else 
+            {
+                _logger.LogWarning($"Unsuccessful authentication by {user.Email}");
             }
 
             return result;

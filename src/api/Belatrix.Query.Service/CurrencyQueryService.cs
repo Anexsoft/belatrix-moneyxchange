@@ -1,6 +1,7 @@
 ﻿using Belatrix.Persistence;
 using Belatrix.Query.Service.DTOs;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
 
 namespace Belatrix.Query.Service
@@ -12,11 +13,15 @@ namespace Belatrix.Query.Service
 
     public class CurrencyQueryService : ICurrencyQueryService
     {
-        public readonly ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
+        private readonly ILogger<CurrencyQueryService> _logger;
 
-        public CurrencyQueryService(ApplicationDbContext context) 
+        public CurrencyQueryService(
+            ApplicationDbContext context,
+            ILogger<CurrencyQueryService> logger) 
         {
             _context = context;
+            _logger = logger;
         }
 
         public async Task<CurrencyDto> GetAsync(string code) 
@@ -24,7 +29,10 @@ namespace Belatrix.Query.Service
             var result = await _context.Currencies.SingleOrDefaultAsync(x => x.Code.Equals(code));
 
             if (result == null) 
+            {
+                _logger.LogWarning($"Currency couldn't be retrieved by code: {code}");
                 return null;
+            }
 
             return new CurrencyDto
             {

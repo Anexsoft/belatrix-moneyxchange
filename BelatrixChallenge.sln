@@ -27,6 +27,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Belatrix.Models.Domain", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Belatrix.Client", "src\client\Belatrix.Client\Belatrix.Client.csproj", "{62112712-AAC0-4115-9B73-A65A02A4D630}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Tests", "05. Tests", "{97AC77F3-416B-4CBE-8541-0959374EC23B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belatrix.Tests", "src\api\Belatrix.Tests\Belatrix.Tests.csproj", "{DC1040FF-8933-4007-BA77-ABDC6A7886F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,10 @@ Global
 		{62112712-AAC0-4115-9B73-A65A02A4D630}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62112712-AAC0-4115-9B73-A65A02A4D630}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62112712-AAC0-4115-9B73-A65A02A4D630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC1040FF-8933-4007-BA77-ABDC6A7886F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC1040FF-8933-4007-BA77-ABDC6A7886F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC1040FF-8933-4007-BA77-ABDC6A7886F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC1040FF-8933-4007-BA77-ABDC6A7886F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +80,8 @@ Global
 		{2883EFDE-C935-4FA7-904F-E345C38110AB} = {10E9F882-6735-4AED-99AE-A55C211B836B}
 		{89D99679-4889-4EDD-B2B0-1ABDF96768F7} = {2883EFDE-C935-4FA7-904F-E345C38110AB}
 		{62112712-AAC0-4115-9B73-A65A02A4D630} = {3E3E3B86-0105-4FE9-A864-A543A2A01C39}
+		{97AC77F3-416B-4CBE-8541-0959374EC23B} = {10E9F882-6735-4AED-99AE-A55C211B836B}
+		{DC1040FF-8933-4007-BA77-ABDC6A7886F9} = {97AC77F3-416B-4CBE-8541-0959374EC23B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8FA31BDA-125A-4F7E-B86B-816D4ED9F331}
